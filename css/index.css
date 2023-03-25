@@ -80,6 +80,7 @@ body .container .card__cvc {
   font-size: 0.5rem;
 }
 body .container .form {
+  display: none;
   margin: 4.5em 1.5em 10em;
   padding: 0;
   max-width: 100%;
@@ -155,7 +156,27 @@ body .container .form__date-cvc .icvc {
   width: 7em;
 }
 body .container .ty {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  margin: 4.5em 1.5em 10em;
+  padding: 0;
+  max-width: 100%;
+  align-items: center;
+}
+body .container .ty__icon {
+  width: 4.5em;
+}
+body .container .ty__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: hsl(278, 68%, 11%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1.25em;
+}
+body .container .ty__desc {
+  color: hsl(279, 6%, 55%);
+  margin: 0 0 2.75em;
 }
 body .container .btn {
   border: none;
@@ -165,6 +186,7 @@ body .container .btn {
   font-family: inherit;
   padding: 0.9em 7em;
   border-radius: 8px;
+  text-decoration: none;
 }
 body footer.attribution {
   display: none;

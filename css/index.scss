@@ -92,6 +92,7 @@ body {
         }
         
         .form {
+            display: none;
             margin: 4.5em 1.5em 10em;
             padding: 0;
             max-width: 100%;
@@ -171,7 +172,30 @@ body {
         }
 
         .ty {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            margin: 4.5em 1.5em 10em;
+            padding: 0;
+            max-width: 100%;
+            align-items: center;
+
+            &__icon {
+                width: 4.5em;
+            }
+
+            &__title {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $very-dark-violet;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-top: 1.25em;
+            }
+
+            &__desc {
+                color: $dark-grayish-violet;
+                margin: 0 0 2.75em;
+            }
         }
         
         .btn {
@@ -182,6 +206,7 @@ body {
             font-family: inherit;
             padding: 0.9em 7em;
             border-radius: 8px;
+            text-decoration: none;
         }
     }
 
