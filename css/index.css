@@ -80,7 +80,7 @@ body .container .card__cvc {
   font-size: 0.5rem;
 }
 body .container .form {
-  margin: 4.5em 1.5em;
+  margin: 4.5em 1.5em 10em;
   padding: 0;
   max-width: 100%;
 }
@@ -106,12 +106,21 @@ body .container .form .details {
   border-radius: 8px;
   width: 90%;
   margin: 0.5em 0 1em;
+  color: hsl(278, 68%, 11%);
 }
 body .container .form .details::-moz-placeholder {
   color: hsl(270, 3%, 87%);
 }
 body .container .form .details::placeholder {
   color: hsl(270, 3%, 87%);
+}
+body .container .form .details:focus {
+  outline: none;
+  border: double 1px transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 100%)), linear-gradient(to right, hsl(249, 99%, 64%) 0%, hsl(278, 94%, 30%) 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 body .container .form__date-cvc {
   display: grid;
@@ -147,6 +156,15 @@ body .container .form__date-cvc .icvc {
 }
 body .container .ty {
   display: none;
+}
+body .container .btn {
+  border: none;
+  background: hsl(278, 68%, 11%);
+  color: hsl(270, 3%, 87%);
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.9em 7em;
+  border-radius: 8px;
 }
 body footer.attribution {
   display: none;
