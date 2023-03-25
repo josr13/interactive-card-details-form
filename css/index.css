@@ -1,1 +1,153 @@
-/*# sourceMappingURL=index.css.map */
+:root {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  height: 100vh;
+  width: 100vw;
+}
+body .container .card {
+  color: hsl(0, 0%, 100%);
+}
+body .container .card__bg-mobile {
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+body .container .card__bg-desktop {
+  display: none;
+}
+body .container .card__logo {
+  position: absolute;
+  z-index: 5;
+  top: 8em;
+  left: 2em;
+  width: 3em;
+}
+body .container .card__front {
+  position: absolute;
+  width: 75%;
+  top: 7em;
+  left: 1em;
+  z-index: 4;
+}
+body .container .card__number {
+  position: absolute;
+  z-index: 6;
+  top: 10em;
+  left: 1.75em;
+  letter-spacing: 0.1em;
+  font-size: 1.05rem;
+}
+body .container .card__name {
+  position: absolute;
+  z-index: 7;
+  top: 26.5em;
+  left: 4em;
+  letter-spacing: 0.1em;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+body .container .card__exp-date {
+  position: absolute;
+  z-index: 8;
+  top: 26.5em;
+  right: 11em;
+  letter-spacing: 0.1em;
+  font-size: 0.5rem;
+}
+body .container .card__back {
+  position: absolute;
+  top: 2em;
+  right: 1em;
+  width: 75%;
+  z-index: 2;
+}
+body .container .card__cvc {
+  position: absolute;
+  z-index: 3;
+  top: 10.75em;
+  right: 6em;
+  letter-spacing: 0.1em;
+  font-size: 0.5rem;
+}
+body .container .form {
+  margin: 4.5em 1.5em;
+  padding: 0;
+  max-width: 100%;
+}
+body .container .form label {
+  display: block;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+body .container .form .details {
+  display: block;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: 0.05em;
+  padding: 0.5em 0.75em;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 8px;
+  width: 90%;
+  margin: 0.5em 0 1em;
+}
+body .container .form .details::-moz-placeholder {
+  color: hsl(270, 3%, 87%);
+}
+body .container .form .details::placeholder {
+  color: hsl(270, 3%, 87%);
+}
+body .container .form__date-cvc {
+  display: grid;
+  grid-template-columns: repeat(2, 1/2fr) 1fr;
+  grid-template-rows: 1em 3em;
+  grid-column-gap: 0.75em;
+  grid-row-gap: 0;
+  margin-bottom: 1.25em;
+}
+body .container .form__date-cvc .lmonth {
+  grid-area: 1/1/2/3;
+}
+body .container .form__date-cvc .imonth {
+  grid-area: 2/1/3/2;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 2.25em;
+}
+body .container .form__date-cvc .iyear {
+  grid-area: 2/2/3/3;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 2.25em;
+}
+body .container .form__date-cvc .lcvc {
+  grid-area: 1/3/2/4;
+}
+body .container .form__date-cvc .icvc {
+  grid-area: 2/3/3/4;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 7em;
+}
+body .container .ty {
+  display: none;
+}
+body footer.attribution {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
