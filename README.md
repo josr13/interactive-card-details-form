@@ -29,6 +29,7 @@ This is my solution to the [Interactive card details form challenge on Frontend 
 - Semantic HTML5 markup
 - [Sass](https://sass-lang.com/) - CSS preprocessor
 - Flexbox
+- CSS Grid
 - Sass variables
 - Sass partial files
 - JavaScript

@@ -92,7 +92,6 @@ body {
         }
         
         .form {
-            display: none;
             margin: 4.5em 1.5em 10em;
             padding: 0;
             max-width: 100%;
@@ -173,6 +172,7 @@ body {
 
         .ty {
             display: flex;
+            display: none;
             flex-direction: column;
             margin: 4.5em 1.5em 10em;
             padding: 0;

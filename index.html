@@ -25,22 +25,22 @@
       <img src="images/bg-card-back.png" alt="Card back side" class="card__back">
       <p class="card__cvc">000</p>
     </div>
-    <form class="form">
+    <form class="form" method="post">
       <div class="form__name">
         <label for="fname">Cardholder Name</label>
-        <input type="text" name="fname" id="fname" class="details" placeholder="e.g. Jane Appleseed">
+        <input type="text" name="fname" id="fname" class="details" placeholder="e.g. Jane Appleseed" pattern="[a-zA-Z]+([ \t][a-zA-Z]+)*" inputmode="numeric" required>
       </div>
       <div class="form__number">
         <label for="fname">Card Number</label>
-        <input type="number" name="fnumber" id="fnumber" class="details" placeholder="e.g. 1234 5678 9123 0000">
+        <input type="text" name="fnumber" id="fnumber" class="details" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" size="3" min="0000000000000000" max="9999999999999999" pattern="^\d{16}$" inputmode="numeric" required>
       </div>
       <div class="form__date-cvc">
         <label for="fmonth" class="lmonth">Exp. Date (MM/YY)</label>
         <label for="fyear" class="lyear"></label>
-        <input type="number" name="fmonth" id="fmonth" class="details imonth" placeholder="MM">
-        <input type="number" name="fyear" id="fyear" class="details iyear" placeholder="YY">
+        <input type="text" name="fmonth" id="fmonth" class="details imonth" placeholder="MM" minlength="2" maxlength="2" size="2" min="01" max="12" pattern="^(0[1-9]|1[0-2])$" inputmode="numeric" required>
+        <input type="text" name="fyear" id="fyear" class="details iyear" placeholder="YY" maxlength="2" size="2" min="00" max="99" pattern="^\d{2}$" inputmode="numeric" required>
         <label for="fcvc" class="lcvc">CVC</label>
-        <input type="number" name="fcvc" id="fcvc" class="details icvc" placeholder="e.g. 123">
+        <input type="text" name="fcvc" id="fcvc" class="details icvc" placeholder="e.g. 123" maxlength="3" size="3" min="000" max="999" pattern="^(0\d{2}|[1-9]\d{2})$" inputmode="numeric" required>
       </div>
       <div class="form__submit">
         <input type="submit" value="Confirm" class="btn">
@@ -59,6 +59,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/josr13">josr13</a>.
   </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

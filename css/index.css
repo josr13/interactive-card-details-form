@@ -80,7 +80,6 @@ body .container .card__cvc {
   font-size: 0.5rem;
 }
 body .container .form {
-  display: none;
   margin: 4.5em 1.5em 10em;
   padding: 0;
   max-width: 100%;
@@ -157,6 +156,7 @@ body .container .form__date-cvc .icvc {
 }
 body .container .ty {
   display: flex;
+  display: none;
   flex-direction: column;
   margin: 4.5em 1.5em 10em;
   padding: 0;
