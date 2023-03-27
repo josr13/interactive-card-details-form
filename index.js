@@ -2,7 +2,6 @@ let fname = document.querySelector("#fname");
 let fnumber = document.querySelector("#fnumber");
 let fmonth = document.querySelector("#fmonth");
 let fyear = document.querySelector("#fyear");
-let fexpDate = `${fmonth.value}/${fyear.value}`;
 let fcvc = document.querySelector("#fcvc");
 
 let cname = document.querySelector(".card__name");
@@ -15,9 +14,13 @@ let cnumberDefault = cnumber.innerHTML;
 let cexpDateDefault = cexpDate.innerHTML;
 let ccvcDefault = ccvc.innerHTML;
 
-let mo = fmonth.value;
-let ye = fyear.value;
+let submitBtn = document.querySelector(".form__submit__btn");
+let ty = document.querySelector(".ty");
+let tyBtn = document.querySelector(".ty__btn");
+let formClass = document.querySelector(".form");
+let inputs = formClass.querySelectorAll("input");
 
+// Form validation
 fname.addEventListener("input", () => {
     cname.innerHTML = fname.value;
     if (cname.innerHTML === "") {
@@ -60,4 +63,26 @@ fcvc.addEventListener("input", () => {
     if (ccvc.innerHTML === "") {
         ccvc.innerHTML = ccvcDefault;
     }
+});
+
+// Submit
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let isValid = true;
+
+  inputs.forEach((input) => {
+    if (!input.checkValidity()) {
+        isValid = false;
+      }
+  });
+
+  if (isValid) {
+    formClass.classList.add("hidden");
+    ty.classList.remove("hidden");
+  }
+});
+
+tyBtn.addEventListener("click", () => {
+    formClass.classList.remove("hidden");
+    ty.classList.add("hidden");
 });
