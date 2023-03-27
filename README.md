@@ -15,12 +15,12 @@ This is my solution to the [Interactive card details form challenge on Frontend 
 
 ### Screenshot
 
-![Interactive card details form desktop screenshot](images/screenshot.png)
+![Interactive card details form mobile screenshot](images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [GitHub Pages]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-interactive-card-details-form-using-grid-flex-sass-and-bem-ayGhJBJP_n)
+- Live Site URL: [GitHub Pages](https://josr13.github.io/interactive-card-details-form/)
 
 ## My process
 
